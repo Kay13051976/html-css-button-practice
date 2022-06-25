@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .subscribe-button {
+        background-color: rgb(200, 0, 0);
+        color: white;
+        border: none;
+        height: 36px;
+        width: 105px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right: 8px;
+        transition: opacity 0.15s;
+      }
+      .subscribe-button:hover {
+        opacity: 0.8;
+      }
+      .subscribe-button:active {
+        opacity: 0.5;
+      }
+
+      .join-button {
+        background-color: white;
+        border-color: rgb(41, 118, 211);
+        border-style: solid;
+        border-width: 1px;
+        color: rgb(41, 118, 211);
+        height: 36px;
+        width: 62px;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: background-color 0.15s, color 0.15s;
+      }
+      .join-button:hover {
+        background-color: rgb(41, 118, 211);
+        color: white;
+      }
+      .join-button:active {
+        opacity: 0.7;
+      }
+      .tweet-button {
+        background-color: rgb(2, 137, 255);
+        color: white;
+        border: none;
+        height: 36px;
+        width: 70px;
+        border-radius: 18px;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        margin-left: 8px;
+        transition: box-shadow 0.15;
+      }
+      .tweet-button:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      .request-button {
+        background-color: black;
+        color: white;
+        border: none;
+        height: 43px;
+        width: 120px;
+        cursor: pointer;
+        margin-left: 8px;
+        box-shadow: 5px 5px 10px black;
+      }
+      .add-to-cart-button {
+        background-color: #f0f04de3;
+        color: black;
+        border: none;
+        height: 40px;
+        width: 210px;
+        font-size: 19px;
+        border-radius: 20px;
+        margin-left: 8px;
+        cursor: pointer;
+      }
+      .sign-up-button {
+        background-color: #64b664;
+        color: white;
+        border: none;
+        height: 45px;
+        width: 115px;
+        font-size: 17px;
+        font-weight: bold;
+        border-radius: 4px;
+        margin-left: 8px;
+        margin-right: 8px;
+        cursor: pointer;
+      }
+      .get-started-button {
+        background-color: rgb(156, 104, 152);
+        color: white;
+        border: none;
+        height: 44px;
+        width: 136px;
+        font-size: 14;
+        font-weight: bold;
+        border-radius: 3px;
+        margin-right: 8px;
+        cursor: pointer;
+      }
+      .download-button {
+        background-color: #dfddddf8;
+        height: 44px;
+        width: 136px;
+        font-size: 14px;
+        border-radius: 3px;
+        border-style: solid;
+        border-width: 1px;
+        cursor: pointer;
+        transition: background-color 0.15s, color 0.15s;
+      }
+      .download-button:hover {
+        background-color: white;
+        color: black;
+      }
+      .download-button:active {
+        opacity: 0.7;
+      }
+      .apply-on-company-website-button {
+        background-color: #4444d6;
+        color: white;
+        height: 45px;
+        width: 300px;
+        font-size: 18px;
+        border-radius: 22px;
+        border: none;
+        cursor: pointer;
+        margin-left: 8px;
+      }
+      .save-button {
+        background-color: rgb(247, 247, 247);
+        color: rgb(2, 137, 255);
+        font-size: 18px;
+        font-weight: bold;
+        height: 45px;
+        width: 100px;
+        border: solid;
+        border-width: 1px;
+        border-radius: 22px;
+        margin-left: 8px;
+        cursor: pointer;
+        transition: box-shadow 0.15;
+      }
+      .save-button:hover {
+        box-shadow: 5px 5px 10px rgba(2, 137, 255, 0.15);
+      }
+      a {
+        font-family: "Franklin Gothic Medium";
+        font-size: 24px;
+        color: rgba(255, 102, 0, 0.829);
+        font-weight: 600;
+        cursor: pointer;
+      }
+      h1 {
+        font-size: 45px;
+        font-weight: 700;
+      }
+      .price-paragraph {
+        color: hsl(120, 85%, 32%);
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .delivery-paragraph {
+        font-family: "Franklin Gothic Medium";
+        font-size: 28px;
+      }
+      .div-add-to-cart-button {
+        background-color: #f0f04de3;
+        color: black;
+        border: none;
+        height: 50px;
+        width: 200px;
+        font-size: 19px;
+        border-radius: 25px;
+        margin-left: 8px;
+        cursor: pointer;
+        transition: opacity 0.15s;
+      }
+      .div-add-to-cart-button:hover {
+        opacity: 0.8;
+      }
+      .div-add-to-cart-button:active {
+        opacity: 0.5;
+      }
+      .buy-now-button {
+        background-color: orange;
+        color: black;
+        border: none;
+        height: 50px;
+        width: 200px;
+        font-size: 19px;
+        border-radius: 25px;
+        margin-left: 8px;
+        cursor: pointer;
+        transition: opacity 0.15s;
+      }
+      .buy-now-button:hover {
+        opacity: 0.8;
+      }
+      .buy-now-button:active {
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="subscribe-button">SUBSCRIBE</button>
+    <button class="join-button">JOIN</button>
+    <button class="tweet-button">Tweet</button>
+    <button class="request-button">Request now</button>
+    <button class="add-to-cart-button">Add to cart</button>
+    <button class="sign-up-button">Sign up</button>
+    <button class="get-started-button">Get started</button>
+    <button class="download-button">Download</button>
+    <button class="apply-on-company-website-button">
+      Apply on company website
+    </button>
+    <button class="save-button">Save</button>
+    <div
+      style="
+        width: 600px;
+        height: 600px;
+        background-color: white;
+        border: 2px solid black;
+        margin-top: 40px;
+        text-indent: 30px;
+        padding-top: 30px;
+      "
+    >
+      <a
+        href="https://www.amazon.co.uk/?tag=hydukabkm-21&ref=pd_sl_utacywixw_e&adgrpid=1181975898801513&hvadid=73873694265569&hvnetw=o&hvqmt=e&hvbmt=be&hvdev=c&hvlocint=&hvlocphy=40873&hvtargid=kwd-73873630802178:loc-188&hydadcr=1262_1917202"
+        >Back to Amazon</a
+      >
+      <h1>Nike Black Running Shoes</h1>
+      <p class="price-paragraph">$39 - in stock.</p>
+      <p class="delivery-paragraph">Free delivery tomorrow.</p>
+      <button class="div-add-to-cart-button">Add to cart</button>
+      <button class="buy-now-button">Buy now</button>
+    </div>
+  </body>
+</html>
